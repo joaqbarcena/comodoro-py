@@ -1,7 +1,7 @@
 # ComodoroPy - Chequea que tu servidor siga con vida...  
 
 ### Y que hace ?
- - Ejecutas `installer.sh` que va a descargar algunas dependecias, y genera un `cron job` cada 5 minutos
+ - Ejecutas `install.sh` que va a descargar algunas dependecias, y genera un `cron job` cada 5 minutos
  - Le especificas un servidor `HOST` y `PORT` en el archivo de `comodoro.py`
  - El cron ejecuta este script repetitivamente haciendo un `GET` al server que le especificaste
  - Espera un `json` con ciertas keys, que tenes que indicarle y estableces la logica que necesitas 
