@@ -33,7 +33,7 @@ def parse_time(mdate):
 
 def log(a,b,c,d,e,f):
     logf = open("log","a+")
-    logf.write("%s : [Status  %s %s %s %s %s %s]\n" % (datetime.datetime.now(),a,b,c,d,e,f))
+    logf.write("%s : [Status  %s %s %s %s %s]\n" % (datetime.datetime.now(),a,b,c,d,e))
     logf.close()
 
 def exc(e):
@@ -78,7 +78,7 @@ if PORT != "NNNN" and HOST != "somehost.you.have" :
             cond3_ok = jres["cond3"] > 0 
             cond4_ok = jres["cond4"] > 0 
             ok = cond1_ok and cond2_ok and cond3_ok and cond4_ok #Can add all the conditions that we want
-        log(res.status_code, activos_ok, equipos_ok, qty_ok, timer_ok, last_ok)
+        log(res.status_code, cond1_ok, cond2_ok, cond3_ok, cond4_ok)
     except e:
         log(e)
         pass
